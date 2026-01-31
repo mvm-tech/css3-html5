@@ -1,12 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/css.css">
-    <title>Layout</title>
+    <meta charset="UTF-8"> <!--Kodirovka dly russkih bukv-->
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"> <!--Dly mobilnyh-->
+    <title>Moy ychebnuy project - Portfolio</title> <!--Zagolovok stranicy-->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--Ikonka saita opcionalno-->
+
 </head>
 
+<body>
+    
+  <!--<h1>Izuchaem CSS3 i HTML5</h1>
+  <p>Proekt dly izucheniy osnov CSS3 i HTML5</p>-->
+
+ <header class="page-header padding-site">
+        <div class="page-header-wrp"> <span class="page-header-title">Product name</span>
+
+<nav> 
+               <ul>  
+                    <li><a href="#home">Glavnay</a></li>
+                    <li><a href="#about">O proecte</a></li>
+                    <li><a href="#projects">Moi rabotu</a></li>
+                    <li><a href="#contacts">Kontaktu</a></li>
+
+                          <!--Ssylka na biblioteky-->
+
+                <li><a href="ui-library.html" target="-blank">Moy UI biblioteka</a></li>
+               </ul>
+            </nav>
+        </div>
+        <img class="page-header-pic" src='img/images.jpg' alt="foto product" height="214"></header>
+
+                                 <!--Odin osnovnoy kontent-->
+
+            <main class="content">
+                                  <!--Privetstvennay sekciy-->
+     <section id="home">
+             <h2>Dobro pozhalovat!</h2>
+                <p>Eto moy ychebnuy proekt po izucheniy HTML5 i CSS3..</p>
+     </section>
+                                     <!--Sekciy o produkte-->
+
+        <section id="about" class="about-product padding-site">
+
+            <div class="about-product-wrp"> 
+                <span class="about-product-title">About your product</span>
+
+                <p class="about-product-paragraph-one"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni,
+                     explicabo veniam incidunt in quam sapiente ut ipsum. </p>
+                <p class="about-product-paragraph-two">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor. </p>
+            </div>
+
+            <img class="about-product-video" src="img/bike.jpg" alt="foto" height="245">
+         </section>
+                                   <!--Sekciy dostoinstv-->
+
+        <section class="dignity padding-site">
+            <h2 class="dignity-title">Dignity and pluses product</h2>
+
+            <details open class="dignity-details-left">
+                <summary>Dostoinstvo 1</summary>
+
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet
+                     atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione
+                      perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+
+            <details open class="dignity-details-right">
+                <summary>Dostoinstvo 2</summary>
+
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+
+            <details open class="dignity-details-left">
+                <summary>Dostoinstvo 3</summary>
+
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+            <details open class="dignity-details-right">
+                <summary> Dostoinstvo 4</summary>
+
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+            <details open class="dignity-details-right">
+                <summary>Dostoinstvo 5</summary>
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+            <details open class="dignity-details-left">
+                <summary>Dostoinstvo 6</summary>
+
+                <p class="dignity-paragraph">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore. </p>
+            </details>
+        </section>
+
+                                    <!-- Sekciy screenshots-->
+                                                     
+        <section class="screenshots padding-site">
+            <h2 class="screenshots-title">Screenshots</h2>
+            <figure class="screenshots-item"> 
+            <img class="screenshots-pic" src="img/bike.jpg" alt="foto" width="200" height="150">
+
+                <figcaption class="screenshots-item-txt">
+                    <h3 class="screenshots-image-title">The description for the image</h3>
+                    <p class="screenshots-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores velit, recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque cum aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
+                </figcaption>
+              </figure>
+
+            <figure class="screenshots-item"> 
+            <img screenshots-pic src="img/bike.jpg" alt="foto" width="200" height="150">
+                <figcaption class="screenshots-item-txt">
+                    <h3 class="screenshots-image-title">The description for the image</h3>
+                    <p class="screenshots-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores velit, recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque cum aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
+                </figcaption>
+            </figure>
+
+            <figure class="screenshots-item">
+            <img screenshots-pic src="img/bike.jpg" alt="foto" width="200" height="150">
+                <figcaption class="screenshots-item-txt">
+                    <h3 class="screenshots-image-title">The description for the image</h3>
+                    <p class="screenshots-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores velit, recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque cum aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
+                </figcaption>
+            </figure>
+
+            <figure class="screenshots-item"> <img screenshots-pic src="img/bike.jpg" alt="foto" width="200" height="150">
+                <figcaption class="screenshots-item-txt">
+                    <h3 class="screenshots-image-title">The description for the image</h3>
+                    <p class="screenshots-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quas maiores velit, recusandae minima a consequatur, eligendi harum ipsam expedita doloribus, doloremque cum aut blanditiis ullam perspiciatis maxime earum assumenda!</p>
+                </figcaption>
+            </figure>
+        </section>
+                                       <!--Sekciy otzuvov-->
+
+        <section class="reviews padding-site"> <span class="reviews-title">Reviews</span>
+            <article class="reviews-paragraph">
+                <div class="reviews-paragraph-img"></div>
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <span class="reviews-txt-author">Lourens S.</span> </p>
+            </article>
+
+            <article class="reviews-paragraph">
+                <div class="reviews-paragraph-img"></div>
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <span class="reviews-txt-author">Lourens S.</span> </p>
+            </article>
+
+            <article class="reviews-paragraph reviews-paragraph-right">
+                <div class="reviews-paragraph-img"></div>
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <span class="reviews-txt-author">Lourens S.</span> </p>
+            </article>
+
+            <article class="reviews-paragraph reviews-paragraph-right">
+                <div class="reviews-paragraph-img"></div>
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <span class="reviews-txt-author">Lourens S.</span></p>
+            </article>
+        </section>
+    
+                              <!--Sekciy moih proektov-->
+
+              <section id="projects" class="projects-section">
+                                <h2>Moi proektu</h2>
+                                <div class="projects-grid">
+                                    <div class="project-card">
+                                        <h3>Ychebnuy proekt po HTML/CSS</h3>
+                                        <p>Bazovay verstka s semanticheskoy razmetkoy</p>
+                                        <p><strong>Tehnologii</strong> HTML5. CSS3, adaptivnay verstka</p>
+                                        <a href="#" class="project-link">Otkryt proekt</a>
+                                    </div>
+                                    <div class="project-card highlight">
+                                 <h3>UI biblioteka komponentov</h3>
+                                 <p>Sobranie pereispolzuemuh UI komponentov</p>
+                                 <p><strong>Tehnologii:</strong> HTML5, CSS3, JavaScript, CSS Grid, Flexbox</p>
+                                 <p><strong>Komponentu:</strong> 10+ gotovuh elementov</p>
+                         <a href="ui-library.html" target="_blank" class="project-link">Otkrut biblioteky</a>                
+                             </div>
+                                </div>
+                              </section>      
+                              
+                              
+
+
+
+                          <!--Moy predudyhy navigaciy-->
+
+
+          <!--  <nav>
+                <ul class="page-header-list">
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Put on this page information about your product</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">A detailed description of your product</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Tell us about the advantages and merits</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Associate the page with the payment system</p>
+                </li>
+            </ul>-->
+
+           
+                                      <!--Osnovnoy kontent-->
+                                      <!--Kartochki projecta, ydalit esli ne ponadobytsy--> 
+<!--
+           <section id="projects">
+              <H2>Moi proektu</H2>
+
+
+            Kartochka proekta 1: Moy osnovnoy site 
+            <div class="project-card">
+                <h3>Ychebnuy proekt po HTML/CSS</h3>
+                <p>Bazovay verstka s semanticheskoy razmetkoy</p>
+                <p><strong>Tehnologii</strong> HTML5, CSS3, adaptivnay verstka</p>
+                <a href="#" class="project-link">Otkrut proekt</a>
+            </div>
+
+            Kartochka proekta 2: UI biblioteka
+            <div class="project-card highlight">
+                <h3>UI bibleoteka komponentov</h3>
+                <p>Sobranie pereispolzuemuh UI komponentov</p>
+                <p><strong>Tehnologii:</strong>HTML5, CSS3, JavaScript, CSS Grid, Flexbox</p>
+                <p><strong>Komponentu:</strong>gotovuh elementov</p>
+                <a href="ui-library.html" target="_blank" class="project-link">Otkrut biblioteky</a>
+            </div>
+        </section>-->
+
+                              <!--Sekciy kontaktov-->
+   <section id="cantacts" class="contacts-section">
+    <h2>Kontaktu</h2>
+    <p>Email: vmmayorov@gmail.com</p>
+    <p>GitHub:<a href="https://github.com/mvm-tech" target="_blank"
+         rel="noopener noreferrer"> github.com/mvm-tech</a></p>
+   </section> 
+</main>  
+                                  <!--Podval saita-->              
+
+    <footer>
+        <p>&copy; 2026 Moy ychebnuy proekt</p>
+        <p>Sozdano v procese izucheniy veb-razrabotki</p>
+    </footer>
+    
+    <!--Podklychenie scripta-->
+    <script src="script.js"></script>
+</body>
+
+</html>
+                                              <!--Moy predudyhay navigaciy-->
+
+          <!--  <nav>
+                <ul class="page-header-list">
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Put on this page information about your product</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">A detailed description of your product</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Tell us about the advantages and merits</p>
+                </li>
+                <li class="page-header-list-item">
+                    <p class="page-header-list-item-paragraph">Associate the page with the payment system</p>
+                </li>
+            </ul>-->
+
+
+<!--
 <body>
     <header class="page-header padding-site">
         <div class="page-header-wrp"> <span class="page-header-title">Product name</span>
@@ -25,6 +289,7 @@
                 </li>
             </ul>
         </div> <img class="page-header-pic" src="#" alt="foto product" height="214"> </header>
+
     <main class="content">
         <section class="about-product padding-site">
             <div class="about-product-wrp"> <span class="about-product-title">About your product</span>
@@ -91,26 +356,34 @@
         <section class="reviews padding-site"> <span class="reviews-title">Reviews</span>
             <article class="reviews-paragraph">
                 <div class="reviews-paragraph-img"></div>
-                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                     iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                     Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
                 <span class="reviews-txt-author">Lourens S.</span> </p>
             </article>
             <article class="reviews-paragraph">
                 <div class="reviews-paragraph-img"></div>
-                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                     iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus,
+                      possimus officiis sapiente necessitatibus commodi consectetur? 
                 <span class="reviews-txt-author">Lourens S.</span> </p>
             </article>
             <article class="reviews-paragraph reviews-paragraph-right">
                 <div class="reviews-paragraph-img"></div>
-                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                     iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                      Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
                 <span class="reviews-txt-author">Lourens S.</span> </p>
             </article>
             <article class="reviews-paragraph reviews-paragraph-right">
                 <div class="reviews-paragraph-img"></div>
-                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                <p class="reviews-txt">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio,
+                     iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus,
+                      possimus officiis sapiente necessitatibus commodi consectetur? 
                 <span class="reviews-txt-author">Lourens S.</span></p>
             </article>
         </section>
     </main>
 </body>
 
-</html>
+</html>-->

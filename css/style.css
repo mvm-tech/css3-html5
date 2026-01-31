@@ -12,7 +12,7 @@
 
 .page-header {
     width: 100%;
-    background-color: #445162;
+    background-color: #ccc;
     color: #fff;
 }
 
@@ -79,7 +79,7 @@
 
 /*second block*/
 
-.about-product {}
+/*.about-product {}*/
 
 .about-product:after {
     content: "";
@@ -162,7 +162,7 @@
 }
 
 
-}
+
 .dignity-paragraph {
     width: 526px;
     font-size: 16px;
@@ -305,4 +305,158 @@
     line-height: 18px;
     font-weight: 400;
     color: #989898;
+}
+
+                            /* Stili dly kartochek proektov*/
+
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px
+    rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s;
+  }                          
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px
+    rgba(0,0,0,0.12);
+  }
+
+.project-card.highlight {
+    border: 2px solid #6a11cb;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.project-card p {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-card strong {
+    color: #495057;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+   /* transition: background 0.3s;     vydaet ohibku, proverit svoistvo*/ 
+
+}
+
+.project-link:hover {
+    background: #2575fc;
+}
+
+                            /*Adaptivnost dly kartochek*/
+@media (max-width: 768px) {
+    .project-card {
+        padding: 20px;
+    }                            
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+                           /* Стили для секции проектов */
+.projects-section {
+    padding: 40px 20px;
+    background: #f8f9fa;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card.highlight {
+    border: 3px solid #6a11cb;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #2575fc;
+}
+
+/* Стили для секции контактов */
+.contacts-section {
+    padding: 30px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contacts-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contacts-section a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+}
 }
